@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Based out of Bengaluru, India. If you're a business seeking a web presence or an employer looking to hire, contact me.">
+    <meta name="keywords" content="ui developer portfolio site, web designer portfolio, webdesigner portfolio website, web developer, webdeveloper, front end developer, front end developer portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinodh | UI Developer</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom Stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Smooth Scroll -->
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="loading"></div>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle pad-sm"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li><a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle pad-sm"><i class="fa fa-times"></i></a></li>
+            <li class="sidebar-brand">
+                <a href="#top" onclick="$('#menu-close').click()">Vinodh Kumar</a>
+            </li>
+            <li>
+                <a href="#top" onclick="$('#menu-close').click()"><i class="fa fa-home fa-fw fa-custom"></i>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick="$('#menu-close').click()"><i class="fa fa-user fa-fw fa-custom mgr20"></i>About</a>
+            </li>
+            <li>
+                <a href="#skills" onclick="$('#menu-close').click()"><i class="fa fa-line-chart fa-fw fa-custom mgr12"></i>Skills</a>
+            </li>
+            <li>
+                <a href="#history" onclick="$('#menu-close').click()"><i class="fa fa-binoculars fa-fw fa-custom"></i>History</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick="$('#menu-close').click()"><i class="fa fa-camera-retro fa-fw fa-custom"></i>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick="$('#menu-close').click()"><i class="fa fa-envelope fa-fw fa-custom"></i>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1 class="author">VINODH KUMAR</h1>
+
+            <!-- UI -->
+            <div id="uidev">
+                <div class="cover">
+                    <h2 class="stack"><span class="char1">U</span>IDeveloper</h2>  
+                </div>
+            </div>
+            <!-- UI End -->
+
+            <!-- Quick Info for smartphone-->
+            <div class="hidden-sm hidden-md hidden-lg intro">
+                <p>Based out of Bengaluru, India.<br>If you're a business seeking a web presence or an employer looking to hire, <a href="#contact" onclick="rocketScroll()">contact me.<i class="fa fa-rocket" aria-hidden="true"></i></a></p>
+            </div>
+            <!-- end -->
+
+            <div class="home-links hidden-xs">
+              <ul class="home-section-links cl-effect-1 mgr0 bounceCustomUl1">
+                <li><span>know</span><a href="#about" onclick="scrollToAbout()">About Me</a></li>
+                <li><span>check</span><a href="#skills" class="linker" onclick="scrollToSkills()">My Skillset</a></li>
+              </ul>
+
+              <ul class="home-section-links cl-effect-1 fl-right clr mgt0 bounceCustomUl2">
+                <li><span>review</span><a href="#history" onclick="scrollToHistory()">History</a></li>
+                <li><span>contact</span><a href="#contact" onclick="scrollToContact()">By Email</a></li>
+              </ul>
+            </div>
+
+            <a href="#about" onclick="scrollToAbout()">
+                <div class="mouse hidden-xs hidden-sm">
+                    <span></span>
+                </div>
+            </a>
+
+            <div class="scroll-down hidden-sm hidden-md hidden-lg">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <h2 class="lines">about</h2>
+                    <h3 class="subtitle">Who I am</h3>
+                    <p class="mgb50">A versatile front-end Web Developer skilled at responsive design, I ensure the creation of sites optimised for viewing across all devices. 
+                    Making things right is a time consuming process, but its the only way I like to work, keeping in mind scalability and clean code that is maintainable and of course the deadlines.
+                    Since I specialize in developing User Interfaces, my attention to detail is extreme and I love to continually learn what’s new all things design related.
+                    I thrieve in a creative environment and prefer teamwork, but I have no issues working independently.
+                    With a Certification/Working knowledge on Graphic Design and Web Development, I aspire to experience as much as I can as well as continue to grow and evolve.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-sm-6">
+                    <h2 class="lines">services</h2>
+                    <h3 class="subtitle">What I Bring</h3>
+                    <ul id="about-list">
+                        <li>Working experience on HTML, CSS, JavaScript and Adobe Creative Suite.</li>
+                        <li>Working experience on C/C++ languages.</li>
+                        <li>1.5 years of experience as Software Engineer.</li>
+                        <li>6+ months of experience as Web Development Instructor.</li>
+                        <li>Understanding of code capabilities accross web browsers and devices.</li>
+                        <li>Working knowledge on Scrum and Agile Methodology.</li>
+                        <li>Ability to function independently but love working in a team environment.</li>
+                        <li>Professional Etiquete.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <h2 class="lines blue">skillset</h2>
+                    <h3 class="subtitle mgb40">My Prof<span class="ml3">i</span>ciencies</h3>
+                    
+                    <!--Progress Bars -->
+                    <h4 class="progress-title">html5</h4>
+                    <div class="progress blue">
+                        <div class="lefttoright" style="width:85%; background:#7e8ebb; border-radius: 5px;">
+                            <div class="progress-value">85%</div>
+                        </div>
+                    </div>
+ 
+                    <h4 class="progress-title">css3</h4>
+                    <div class="progress blue">
+                        <div class="lefttoright" style="width:80%; background:#7e8ebb; border-radius: 5px;">
+                            <div class="progress-value">80%</div>
+                        </div>
+                    </div>
+
+                    <h4 class="progress-title">javascript</h4>
+                    <div class="progress blue">
+                        <div class="lefttoright" style="width:62%; background:#7e8ebb; border-radius: 5px;">
+                            <div class="progress-value">62%</div>
+                        </div>
+                    </div>
+
+                    <h4 class="progress-title">photoshop</h4>
+                    <div class="progress blue">
+                        <div class="lefttoright" style="width:65%; background:#7e8ebb; border-radius: 5px;">
+                            <div class="progress-value">65%</div>
+                        </div>
+                    </div>
+
+                    <h4 class="progress-title">illustrator</h4>
+                    <div class="progress blue">
+                        <div class="lefttoright" style="width:60%; background:#7e8ebb; border-radius: 5px;">
+                            <div class="progress-value">60%</div>
+                        </div>
+                    </div>
+
+                    <h4 class="progress-title">c/c++</h4>
+                    <div class="progress blue">
+                        <div class="lefttoright" style="width:65%; background:#7e8ebb; border-radius: 5px;">
+                            <div class="progress-value">65%</div>
+                        </div>
+                    </div>
+
+                    <h4 class="progress-title" title="Data Structures">ds</h4>
+                    <div class="progress blue mgb80">
+                        <div class="lefttoright" style="width:50%; background:#7e8ebb; border-radius: 5px;">
+                            <div class="progress-value">50%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-6">
+                    <h2 class="lines blue">toolbox</h2>
+                    <h3 class="subtitle mgb40">What I Use</h3>
+                    <ul id="tool-list">
+                        <li>Windows, Fedora</li>
+                        <li>Sublime Text 3, Brackets, Atom, Dreamweaver</li>
+                        <li>Photoshop, Illustrator, Inkscape</li>
+                        <li>Git, Github</li>
+                        <li>XAMPP</li>
+                        <li>Fiddler</li>
+                        <li>Slack, Trello</li>
+                        <li>MS Office Suite, Google Docs</li>
+                    </ul>
+                </div>
+            </div> <!-- row -->       
+        </div><!-- container -->
+    </section>
+
+    <!-- History -->
+    <section id="history" class="history">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <h2 class="lines">career and Education</h2>
+                    <h3 class="subtitle">My History</h3>
+
+                    <div class="row">
+                        <!-- Experience section-->
+                        <div class="col-lg-6 col-sm-6">
+                            <h3 class="credentials">experience</h3>
+                            <!-- experience 1 -->
+                            <div class="exp-wrap animated">
+                                <div class="exp">
+                                    <div class="exp-icon">
+                                        <i class="fa-mine fa fa-desktop"></i>
+                                    </div>
+                                    <div class="exp-head">
+                                        <p class="time-frame">2016</p>
+                                        <h3><a href="https://www.internetacademy.co.in" target="_blank" class="linkout">Internet Academy</a></h3>
+                                        <h4>Front-end Developer and Instructor</h4>
+                                    </div>
+                                </div>
+
+                                <!-- experience 2 -->
+                                <div class="exp mgb80">
+                                    <div class="exp-icon">
+                                        <i class="fa-mine fa fa-desktop"></i>
+                                    </div>
+                                    <div class="exp-head">
+                                        <p class="time-frame">2015</p>
+                                        <h3><a href="https://www.nagra.com" target="_blank" class="linkout">Kudelski Group</a></h3>
+                                        <h4>Software Engineer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- nested col6 Experience-->
+
+                        <!-- Education -->
+                        <div class="col-lg-6 col-sm-6">
+                            <h3 class="credentials">education</h3>
+                            <div class="timeline-wrap">
+                                <!-- Graduation one -->
+                                <div class="timeline-block">
+                                    <div class="timeline-icon">
+                                        <i class="fa-mine fa fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="exp-head">
+                                        <p class="time-frame">2008 - 2010</p>
+                                        <h3 style="color: #828282;">St. Joseph's College</h3>
+                                        <h4>Computer Science</h4>
+                                    </div>
+                                    <div class="specialisation">
+                                        <p>Graduated from St. Joseph's Pre-University College with a Major in Computer Science.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Graduation two -->
+                                <div class="timeline-block mgb80">
+                                    <div class="timeline-icon">
+                                        <i class="fa-mine fa fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="exp-head">
+                                        <p class="time-frame">2010 - 2014</p>
+                                        <h3 style="color: #828282;">HKBK College of Engineering</h3>
+                                        <h4>Computer Science &amp; Engineering</h4>
+                                    </div>
+                                    <div class="specialisation">
+                                        <p>Graduated from HKBKCE with a Major in Computer Science &amp; Engineering.</p>
+                                    </div>
+                                </div>
+                            </div><!-- timeline-wrap -->
+                        </div>
+                    </div><!-- nested row1 Exp and Edu-->
+
+
+                    <div class="row">
+                        <!-- Certifications -->
+                        <div class="col-lg-6 col-sm-6">
+                            <h3 class="credentials">certifications</h3>
+                            <div class="timeline-wrap">
+                                <!-- Certification one -->
+                                <div class="timeline-block">
+                                    <div class="timeline-icon">
+                                        <i class="fa-mine fa fa-certificate"></i>
+                                    </div>
+                                    <div class="exp-head">
+                                        <p class="time-frame">2016</p>
+                                        <h3 style="color: #828282;">Internet Academy</h3>
+                                        <h4>Graphic Design and Web-Development</h4>
+                                    </div>
+                                    <div class="specialisation">
+                                        <p>Successfully completed an Internship program<br>at Internet Academy.</p>
+                                    </div>
+                                </div>
+
+
+                                <!-- Certification two -->
+                                <div class="timeline-block mgb80">
+                                    <div class="timeline-icon">
+                                        <i class="fa-mine fa fa-certificate"></i>
+                                    </div>
+                                    <div class="exp-head">
+                                        <p class="time-frame">2015</p>
+                                        <h3 style="color: #828282;">MindSculptor Systems Pvt. Ltd.</h3>
+                                        <h4>Software for Embedded Systems</h4>
+                                    </div>
+                                    <div class="specialisation">
+                                        <p>Successfully completed a course on <q>Software for Embedded Systems</q> at MindSculptor Systems Pvt. Ltd.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Awards -->
+                        <div class="col-lg-6 col-sm-6">
+                            <h3 class="credentials">awards</h3>
+                            <div class="timeline-wrap">
+                                <!-- Award one -->
+                                <div class="timeline-block">
+                                    <div class="timeline-icon">
+                                        <i class="fa-mine fa fa-shield"></i>
+                                    </div>
+                                    <div class="exp-head">
+                                        <p class="time-frame">2016</p>
+                                        <h3 style="color: #828282;">Best Instructor of the Month</h3>
+                                        <h4>At Internet Academy</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Nested row2 Certifications and Awards -->
+                </div><!-- main col -->
+            </div><!-- main row -->
+        </div><!-- main container -->
+
+        <!-- Resume -->
+        <div class="col-lg-12 col-sm-12" style="text-align: center;">
+            <a data-toggle="modal" href="#myModal" class="btn" id="resume">My Resume (pdf)<i class="fa fa-download"></i></a>
+        </div>
+
+        <!-- Modal -->
+        <div class="container">
+            <div class="row">
+                <div id="myModal" class="modal fade in">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+ 
+                            <div class="modal-header">
+                                <a class="btn btn-default no-border" data-dismiss="modal"><span class="glyphicon glyphicon-remove glyph-modal"></span></a>
+                                <h4 class="modal-title">Hey!, This is just to prevent spam.</h4>
+                            </div>
+
+                            <div class="modal-body">
+                                <p>Fill up the following fields to view my resume.</p>
+                    
+                                <!-- form Modal-->
+                                <form class="form-horizontal" id="contact-form-resume" method="post" action="contactResume.php">
+                                    <div class="form-group">
+                                        <div class="col-lg-8 col-lg-offset-2">
+                                            <input name="name" type="text" class="form-control form-control-modal" placeholder="Your Name" required="required" data-error="Name is required!">
+                                            <div class="help-block help-block-modal with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-8 col-lg-offset-2">
+                                            <input name="email" type="email" class="form-control form-control-modal" placeholder="Email" required="required" data-error="Valid email is required!">
+                                            <div class="help-block help-block-modal with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-8 col-lg-offset-2">
+                                            <textarea class="form-control form-control-modal" rows="5" name="message" placeholder="Reason" required="required" data-error="Please,leave me a message!"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- Success and failure messages -->
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="messages"></div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-8 col-lg-offset-2">
+                                            <button type="submit" class="btn btn-custom btn-custom-modal"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>Send</button>
+                                                
+                                            <button class="btn btn-danger btn-danger-modal" data-dismiss="modal"><i class="fa fa-times fa-fw"></i>Cancel</button>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dalog -->
+                </div><!-- /.modal -->
+            </div>
+        </div>
+    </section>
+
+<!-- end -->
+
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="lines blue">portfolio</h2>
+                    <h3 class="subtitle mgb40">My Works</h3>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="view view-third">
+                                <img src="images/portfolio_1.jpg" alt="Portfolio Works">
+                                <div class="mask">
+                                     <h4>Front-end Developer</h4>
+                                     <p>Was involved in bringing a Designer's concept into life!</p>
+                                    <a href="http://news.beyblade.com/index-redir=1.html" class="info" target="_blank">Take a Look<i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="view view-third">
+                                <img src="images/portfolio_2.jpg" alt="Portfolio Works">
+                                <div class="mask">
+                                     <h4>Tester</h4>
+                                     <p>Served as a Tester, optimising the site across all devices.</p>
+                                    <a href="https://www.internetacademy.co.in/vr" class="info" target="_blank">Take a Look<i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="view view-third">
+                                <img src="images/portfolio_3.jpg" alt="Portfolio Works">
+                                <div class="mask">
+                                     <h4>Front-end Developer</h4>
+                                     <p>Was responsible in converting the entire site into responsive from adaptive design.</p>
+                                    <a href="https://www.internetacademy.co.in" class="info" target="_blank">Take a Look<i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="view view-third">
+                                <img src="images/portfolio_4.jpg" alt="Portfolio Works">
+                                <div class="mask">
+                                     <h4>Front-end Developer</h4>
+                                     <p>My first project as Intern at Internet Academy.</p>
+                                    <a href="https://odikrafts.com" class="info" target="_blank">Take a Look<i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- View more details block -->
+                        <div class="showDivs">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="view view-third">
+                                    <img src="images/portfolio_5.jpg" alt="Portfolio Works" class="fadeSlow">
+                                    <div class="mask">
+                                         <h4>Blogger</h4>
+                                         <p>When I wanted to be a voice for my researched perspective.</p>
+                                        <a href="https://blog.internetacademy.co.in/author/vinodh" class="info" target="_blank">Take a Look<i class="fa fa-external-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="view view-third">
+                                    <img src="images/coming_soon.jpg" alt="Coming Soon" class="fadeSlow">
+                                    <div class="mask">
+                                         <h4>Coming Soon!</h4>
+                                         <p>Coming Soon!</p>
+                                        <!-- <a href="images/portfolio_6.jpg" class="info" target="_blank">Take a Look<i class="fa fa-external-link"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- showDivs -->
+                    </div><!-- /.row (nested) -->
+
+                    <div class="col-lg-12 center-block mgt25">
+                        <button class="btn btn-custom" id="viewmoreitems">View More</button>
+                    </div>
+
+                <!-- carousel for Design display-->
+                    <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 showDivs" style="margin-top: 10px;">
+                        <h2 class="lines blue showDivs">My Designs</h2>
+                        <div id="works-carousel" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner fadeSlow" role="listbox">
+                                <div class="item active">
+                                    <img src="images/works1.jpg" alt="Design Works">
+                                    <!-- <div class="carousel-caption">
+                                        Playing with Lasso-tool and Brushes.
+                                    </div> -->
+                                </div>
+                                <div class="item">
+                                    <img src="images/works2.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works3.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works4.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works5.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works6.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works12.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works7.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works8.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works9.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works10.jpg" alt="Design Works">
+                                </div>
+                                <div class="item">
+                                    <img src="images/works11.jpg" alt="Design Works">
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#works-carousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#works-carousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div><!-- carousel end -->
+                    </div><!-- wrapper of entire carousel -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Map -->
+    <div id="mapOverlay" class="map">
+        <iframe id="map" style="width:100%; height:100%; border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.543134220616!2d77.55726991425337!3d13.064726990794805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae22a851ca1705%3A0x52951920df2083f3!2sChamundeshwari+Layout!5e0!3m2!1sen!2sin!4v1497517808491"></iframe>
+    </div>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="lines blue">contact</h2>
+                    <h3 class="subtitle">Drop Me a Line</h3>
+                    <button class="btn btn-primary btn-lg mgb40 animated shake" id="btn-hire">Yes, I'm available for hire!</button>
+
+                    <!-- form -->
+            <form class="form-horizontal" id="contact-form" method="post" action="contact.php">
+                        <div class="form-group">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <input name="name" type="text" class="form-control" placeholder="Your Name" required="required" data-error="Name is required!">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <input name="email" type="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required!">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <textarea class="form-control" rows="10" name="message"
+                                placeholder="I'm currently accepting new projects and would love to hear about yours. :)" required="required" data-error="Please,leave me a message!"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Success and failure messages -->
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="messages"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <button type="submit" class="btn btn-custom"><i class="fa fa-paper-plane fa-fw send-icon" aria-hidden="true"></i>Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="lines">thanks for visiting!</h2>
+                    <h3 class="subtitle">Let's stay connected!</h3>
+
+                    <!-- <a href="mailto:vinodhkumarvk@outlook.com" id="mailid">vinodhkumarvk@outlook.com</a> -->
+                    <a href="mailto:vinodh.4444@gmail.com" id="mailid">vinodh.4444@gmail.com</a>  
+                   
+                    <ul class="list-inline mgb40" id="social">
+                        <li>
+                            <a href="https://in.linkedin.com/in/vinodhvk44" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/vinodh44" target="_blank"><i class="fa fa-facebook-square fa-fw fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/marian.v.k" target="_blank"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/vinodhvk44" target="_blank"><i class="fa fa-twitter-square fa-fw fa-2x"></i></a>
+                        </li>
+                    </ul>
+                    <p class="text-muted">Copyright &copy; Vinodh Kumar 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script>
+        //Preloader
+        $(window).load(function(){
+            $("#loading").fadeOut(500);
+        });
+
+        //Rotate Rocket Transition Scroll Delay
+        function rocketScroll() {
+            $('html, body').delay(2500).animate({
+            scrollTop: $('#contact').offset().top
+            }, 1400);
+        }
+
+        //UIDeveloper Animation after complete page load
+        $(window).load(function(){
+            $("h2.stack").addClass("animated flip flipCustomh2");
+            $("h1.author").addClass("animated bounceInDown bounceCustomh1");
+            $("ul.bounceCustomUl1").addClass("animated bounceInLeft");
+            $("ul.bounceCustomUl2").addClass("animated bounceInRight");
+            $("div.intro").addClass("animated fadeIn");
+        });
+
+        //ViewMore button
+        $(document).ready(function() {
+            $('#viewmoreitems').click(function() {
+                $('.showDivs').slideToggle("slow");
+                $('.fadeSlow').addClass("flipInX animated");
+                setTimeout(function (){
+                    $('#viewmoreitems').remove();
+                }, 800);
+            });
+        });
+
+        //To open all MyDesign images(which are in Carousel) in a new tab
+        $(document).on('click', '.item img', function(e){ 
+            e.preventDefault(); 
+            var url = $(this).attr('src'); 
+            window.open(url, '_blank');
+        });
+    </script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Contact Form -->
+    <script src="js/validator.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/contactResume.js"></script>
+
+    <!-- uideveloper -->
+    <script src="js/lettering.min.js"></script>
+    <script src="js/ui.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+
+    //Triggering animation on Scroll - Progress Bar
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var animationName = 'progress-bar';
+
+        if( scroll >= 1000) {
+            $('div[class=lefttoright]').addClass(animationName);
+        }
+        else{
+            $('div[class=lefttoright]').removeClass(animationName);
+        }
+    });
+
+
+    //Rocket Rotate
+    $(document).ready(function(){
+        $("div.intro a").click(function(e){
+            var e=window.event||e;
+            $("div.intro p a i").addClass("rotateRocket");
+            e.stopPropagation();
+      });
+
+    $(document).click(function(e){
+        $("div.intro p a i").removeClass("rotateRocket");
+    });
+    });
+
+    //Preventing Scroll and zoom on GoogleMaps
+    $(document).ready(function () {
+        $('#map').addClass('scrolloff');                // set the mouse events to none when doc is ready
+        
+        $('#mapOverlay').on("mouseup",function(){          // lock it when mouse up
+            $('#map').addClass('scrolloff'); 
+            //somehow the mouseup event doesn't get call...
+        });
+        $('#mapOverlay').on("mousedown",function(){        // when mouse down, set the mouse events free
+            $('#map').removeClass('scrolloff');
+        });
+        $("#map").mouseleave(function () {              // becuase the mouse up doesn't work... 
+            $('#map').addClass('scrolloff');            // set the pointer events to none when mouse leaves the map area
+                                                        // or you can do it on some other event
+        });
+    });
+    </script>
+</body>
+</html>
