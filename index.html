@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinodh | UI Developer</title>
     <meta
       name="description"
       content="Based out of Bengaluru, India. If you're a business seeking a web presence or an employer looking to hire, contact me."
@@ -11,16 +13,19 @@
       name="keywords"
       content="ui developer portfolio site, web designer portfolio, webdesigner portfolio website, web developer, webdeveloper, front end developer, front end developer portfolio"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinodh | UI Developer</title>
     <link rel="icon" href="favicon.png" type="image/png" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom Fonts -->
+    <!-- Bootstrap -->
     <link
-      href="font-awesome/css/font-awesome.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      type="text/css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
+    <!-- Custom Fonts -->
+    <script
+      src="https://kit.fontawesome.com/ad8ab300bf.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Custom Stylesheet -->
     <link href="css/main.css" rel="stylesheet" />
     <!-- Smooth Scroll -->
@@ -49,34 +54,19 @@
           <a href="#top" onclick="$('#menu-close').click()">Vinodh Kumar</a>
         </li>
         <li>
-          <a href="#top" onclick="$('#menu-close').click()"
-            ><i class="fa fa-home fa-fw fa-custom"></i>Home</a
-          >
+          <a href="#top" onclick="$('#menu-close').click()">Home</a>
         </li>
         <li>
-          <a href="#about" onclick="$('#menu-close').click()"
-            ><i class="fa fa-user fa-fw fa-custom mgr20"></i>About</a
-          >
+          <a href="#about" onclick="$('#menu-close').click()">About</a>
         </li>
         <li>
-          <a href="#skills" onclick="$('#menu-close').click()"
-            ><i class="fa fa-line-chart fa-fw fa-custom mgr12"></i>Skills</a
-          >
+          <a href="#skills" onclick="$('#menu-close').click()">Skills</a>
         </li>
         <li>
-          <a href="#history" onclick="$('#menu-close').click()"
-            ><i class="fa fa-binoculars fa-fw fa-custom"></i>History</a
-          >
+          <a href="#history" onclick="$('#menu-close').click()">History</a>
         </li>
         <li>
-          <a href="#portfolio" onclick="$('#menu-close').click()"
-            ><i class="fa fa-camera-retro fa-fw fa-custom"></i>Portfolio</a
-          >
-        </li>
-        <li>
-          <a href="#contact" onclick="$('#menu-close').click()"
-            ><i class="fa fa-envelope fa-fw fa-custom"></i>Contact</a
-          >
+          <a href="#portfolio" onclick="$('#menu-close').click()">Portfolio</a>
         </li>
       </ul>
     </nav>
@@ -94,7 +84,7 @@
         </div>
 
         <!-- Quick Info for smartphone-->
-        <div class="hidden-sm hidden-md hidden-lg intro">
+        <div class="intro d-block d-sm-none">
           <p>
             Based out of Bengaluru, India.<br />If you're a business seeking a
             web presence or an employer looking to hire,
@@ -102,7 +92,7 @@
           </p>
         </div>
 
-        <div class="home-links hidden-xs">
+        <div class="home-links d-none d-sm-block">
           <ul class="home-section-links cl-effect-1 mgr0 bounceCustomUl1">
             <li>
               <span>know</span
@@ -130,13 +120,13 @@
           </ul>
         </div>
 
-        <a href="#about" onclick="scrollToAbout()">
-          <div class="mouse hidden-xs hidden-sm">
+        <a href="#about" class="d-none d-sm-block" onclick="scrollToAbout()">
+          <div class="mouse">
             <span></span>
           </div>
         </a>
 
-        <div class="scroll-down hidden-sm hidden-md hidden-lg">
+        <div class="scroll-down d-block d-sm-none">
           <span></span>
         </div>
       </div>
@@ -202,90 +192,94 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-sm-6">
-            <h2 class="lines blue">skillset</h2>
-            <h3 class="subtitle mgb40">
-              My Prof<span class="ml3">i</span>ciencies
-            </h3>
+            <div class="section-left">
+              <h2 class="lines blue">skillset</h2>
+              <h3 class="subtitle mgb40">
+                My Prof<span class="ml3">i</span>ciencies
+              </h3>
 
-            <!--Progress Bars -->
-            <h4 class="progress-title">html5</h4>
-            <div class="progress blue">
-              <div
-                class="lefttoright"
-                style="width: 80%; background: #7e8ebb; border-radius: 5px"
-              >
-                <div class="progress-value">80%</div>
+              <!--Progress Bars -->
+              <h4 class="progress-title">html5</h4>
+              <div class="progress blue">
+                <div
+                  class="lefttoright"
+                  style="width: 80%; background: #7e8ebb; border-radius: 5px"
+                >
+                  <div class="progress-value">80%</div>
+                </div>
               </div>
-            </div>
 
-            <h4 class="progress-title">css3</h4>
-            <div class="progress blue">
-              <div
-                class="lefttoright"
-                style="width: 78%; background: #7e8ebb; border-radius: 5px"
-              >
-                <div class="progress-value">78%</div>
+              <h4 class="progress-title">css3</h4>
+              <div class="progress blue">
+                <div
+                  class="lefttoright"
+                  style="width: 78%; background: #7e8ebb; border-radius: 5px"
+                >
+                  <div class="progress-value">78%</div>
+                </div>
               </div>
-            </div>
 
-            <h4 class="progress-title">javascript</h4>
-            <div class="progress blue">
-              <div
-                class="lefttoright"
-                style="width: 70%; background: #7e8ebb; border-radius: 5px"
-              >
-                <div class="progress-value">70%</div>
+              <h4 class="progress-title">javascript</h4>
+              <div class="progress blue">
+                <div
+                  class="lefttoright"
+                  style="width: 70%; background: #7e8ebb; border-radius: 5px"
+                >
+                  <div class="progress-value">70%</div>
+                </div>
               </div>
-            </div>
 
-            <h4 class="progress-title">design tools</h4>
-            <div class="progress blue">
-              <div
-                class="lefttoright"
-                style="width: 65%; background: #7e8ebb; border-radius: 5px"
-              >
-                <div class="progress-value">65%</div>
+              <h4 class="progress-title">design tools</h4>
+              <div class="progress blue">
+                <div
+                  class="lefttoright"
+                  style="width: 65%; background: #7e8ebb; border-radius: 5px"
+                >
+                  <div class="progress-value">65%</div>
+                </div>
               </div>
-            </div>
 
-            <h4 class="progress-title">ui/ux</h4>
-            <div class="progress blue">
-              <div
-                class="lefttoright"
-                style="width: 70%; background: #7e8ebb; border-radius: 5px"
-              >
-                <div class="progress-value">70%</div>
+              <h4 class="progress-title">ui/ux</h4>
+              <div class="progress blue">
+                <div
+                  class="lefttoright"
+                  style="width: 70%; background: #7e8ebb; border-radius: 5px"
+                >
+                  <div class="progress-value">70%</div>
+                </div>
               </div>
-            </div>
 
-            <h4 class="progress-title">frameworks & libraries</h4>
-            <div class="progress blue">
-              <div
-                class="lefttoright"
-                style="width: 60%; background: #7e8ebb; border-radius: 5px"
-              >
-                <div class="progress-value">60%</div>
+              <h4 class="progress-title">frameworks & libraries</h4>
+              <div class="progress blue">
+                <div
+                  class="lefttoright"
+                  style="width: 60%; background: #7e8ebb; border-radius: 5px"
+                >
+                  <div class="progress-value">60%</div>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 col-sm-6">
-            <h2 class="lines blue">toolbox</h2>
-            <h3 class="subtitle mgb40">What I Use</h3>
-            <ul id="tool-list">
-              <li>Windows</li>
-              <li>Visual Studio Code, Brackets, Atom</li>
-              <li>
-                Figma, InVision, Adobe XD, Adobe Photoshop, Adobe Illustrator
-              </li>
-              <li>Git, Github</li>
-              <li>XAMPP</li>
-              <li>Fiddler</li>
-              <li>Tawk, Drift</li>
-              <li>Pingdom, GTmetrix, Google Analytics</li>
-              <li>Teams, Slack, Trello</li>
-              <li>MS Office Suite, Google Docs</li>
-            </ul>
+            <div class="section-right">
+              <h2 class="lines blue">toolbox</h2>
+              <h3 class="subtitle mgb40">What I Use</h3>
+              <ul id="tool-list">
+                <li>Windows</li>
+                <li>Visual Studio Code, Brackets, Atom</li>
+                <li>
+                  Figma, InVision, Adobe XD, Adobe Photoshop, Adobe Illustrator
+                </li>
+                <li>Git, Github</li>
+                <li>XAMPP</li>
+                <li>Fiddler</li>
+                <li>Tawk, Drift</li>
+                <li>Pingdom, GTmetrix, Google Analytics</li>
+                <li>Teams, Slack, Trello</li>
+                <li>MS Office Suite, Google Docs</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -343,7 +337,7 @@
                   </div>
 
                   <!-- experience 3 -->
-                  <div class="exp mgb80">
+                  <div class="exp">
                     <div class="exp-icon">
                       <i class="fa-mine fa fa-desktop"></i>
                     </div>
@@ -414,7 +408,7 @@
                 <h3 class="credentials">certifications</h3>
                 <div class="timeline-wrap">
                   <!-- Certification 1 -->
-                  <div class="timeline-block">
+                  <div class="timeline-block sht">
                     <div class="timeline-icon">
                       <i class="fa-mine fa fa-certificate"></i>
                     </div>
@@ -432,7 +426,7 @@
                   </div>
 
                   <!-- Certification 2 -->
-                  <div class="timeline-block mgb80">
+                  <div class="timeline-block sht">
                     <div class="timeline-icon">
                       <i class="fa-mine fa fa-certificate"></i>
                     </div>
@@ -513,7 +507,7 @@
               >mvk.vinodhkumar@gmail</a
             >
 
-            <ul class="list-inline mgb40" id="social">
+            <ul id="social">
               <li>
                 <a href="https://in.linkedin.com/in/vinodhvk44" target="_blank"
                   ><i class="fa fa-linkedin-square fa-fw fa-2x"></i
@@ -575,13 +569,17 @@
       });
     </script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Contact Form -->
-    <script src="js/validator.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/contactResume.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- uideveloper -->
     <script src="js/lettering.min.js"></script>
@@ -657,43 +655,12 @@
         var animationName = "progress-bar";
 
         if (scroll >= 1000) {
+          //   alert("1000");
           $("div[class=lefttoright]").addClass(animationName);
         } else {
+          //   alert("Noooo 1000");
           $("div[class=lefttoright]").removeClass(animationName);
         }
-      });
-
-      //Rocket Rotate
-      $(document).ready(function () {
-        $("div.intro a").click(function (e) {
-          var e = window.event || e;
-          $("div.intro p a i").addClass("rotateRocket");
-          e.stopPropagation();
-        });
-
-        $(document).click(function (e) {
-          $("div.intro p a i").removeClass("rotateRocket");
-        });
-      });
-
-      //Preventing Scroll and zoom on GoogleMaps
-      $(document).ready(function () {
-        $("#map").addClass("scrolloff"); // set the mouse events to none when doc is ready
-
-        $("#mapOverlay").on("mouseup", function () {
-          // lock it when mouse up
-          $("#map").addClass("scrolloff");
-          //somehow the mouseup event doesn't get call...
-        });
-        $("#mapOverlay").on("mousedown", function () {
-          // when mouse down, set the mouse events free
-          $("#map").removeClass("scrolloff");
-        });
-        $("#map").mouseleave(function () {
-          // becuase the mouse up doesn't work...
-          $("#map").addClass("scrolloff"); // set the pointer events to none when mouse leaves the map area
-          // or you can do it on some other event
-        });
       });
     </script>
   </body>
