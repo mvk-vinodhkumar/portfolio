@@ -672,7 +672,7 @@ h2.lines:after {
 }
 
 ul#about-list {
-  padding: 0 0 0 30px;
+  padding: 0 0 0 2rem;
   line-height: 2;
 }
 
@@ -717,7 +717,7 @@ h2.blue {
 }
 
 ul#tool-list {
-  padding: 0 0 0 60px;
+  padding: 0 0 0 2rem;
   line-height: 2;
 }
 
@@ -1608,6 +1608,11 @@ div.scroll-down {
     line-height: 1.52;
   }
 
+  ul#about-list,
+  ul#tool-list {
+    padding: 0 0 0 1rem;
+  }
+
   ul#about-list li,
   ul#tool-list li {
     margin-bottom: 0.85rem;
@@ -1620,10 +1625,6 @@ div.scroll-down {
   ul#about-list li,
   ul#tool-list li {
     line-height: 1.52;
-  }
-
-  ul#tool-list {
-    padding: 0 0 0 20px;
   }
 
   .mgb80 {
