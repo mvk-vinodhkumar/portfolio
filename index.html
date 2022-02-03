@@ -3,6 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vinodh Kumar - UI Developer" />
+    <meta
+      property="og:description"
+      content="Based out of Bengaluru, India. If you're a business seeking a web presence or an employer looking to hire, contact me."
+    />
+    <meta
+      property="og:image"
+      content="https://mvk-vinodhkumar.github.io/portfolio/favicon.png"
+    />
+    <meta
+      property="og:url"
+      content="https://mvk-vinodhkumar.github.io/portfolio/"
+    />
+    <meta property="og:site_name" content="Vinodh Kumar - UI Developer" />
+    <meta name="twitter:title" content="Vinodh Kumar - UI Developer" />
+    <meta
+      name="twitter:description"
+      content="Based out of Bengaluru, India. If you're a business seeking a web presence or an employer looking to hire, contact me."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mvk-vinodhkumar.github.io/portfolio/favicon.png"
+    />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta name="category" content="Portfolio" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vinodh | UI Developer</title>
     <meta
@@ -28,8 +57,6 @@
     ></script>
     <!-- Custom Stylesheet -->
     <link href="css/main.css" rel="stylesheet" />
-    <!-- Smooth Scroll -->
-    <script src="js/index.js"></script>
   </head>
 
   <body>
@@ -52,22 +79,22 @@
           </a>
         </li>
         <li class="sidebar-brand">
-          <a href="#top" onclick="$('#menu-close').click()">Vinodh Kumar</a>
+          <a href="#top">Vinodh Kumar</a>
         </li>
         <li>
-          <a href="#top" onclick="$('#menu-close').click()">Home</a>
+          <a href="#top">Home</a>
         </li>
         <li>
-          <a href="#about" onclick="$('#menu-close').click()">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#skills" onclick="$('#menu-close').click()">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#history" onclick="$('#menu-close').click()">History</a>
+          <a href="#history">History</a>
         </li>
         <li>
-          <a href="#portfolio" onclick="$('#menu-close').click()">Portfolio</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
       </ul>
     </nav>
@@ -95,29 +122,17 @@
 
         <div class="home-links d-none d-sm-block">
           <ul class="home-section-links cl-effect-1 mgr0 bounceCustomUl1">
+            <li><span>know</span><a href="#about">About Me</a></li>
             <li>
-              <span>know</span
-              ><a href="#about" onclick="scrollToAbout()">About Me</a>
-            </li>
-            <li>
-              <span>check</span
-              ><a href="#skills" class="linker" onclick="scrollToSkills()"
-                >My Skillset</a
-              >
+              <span>check</span><a href="#skills" class="linker">My Skillset</a>
             </li>
           </ul>
 
           <ul
             class="home-section-links cl-effect-1 fl-right clr mgt0 bounceCustomUl2"
           >
-            <li>
-              <span>review</span
-              ><a href="#history" onclick="scrollToHistory()">My History</a>
-            </li>
-            <li>
-              <span>view</span
-              ><a href="#portfolio" onclick="scrollToContact()">My Works</a>
-            </li>
+            <li><span>review</span><a href="#history">My History</a></li>
+            <li><span>view</span><a href="#portfolio">My Works</a></li>
           </ul>
         </div>
 
@@ -505,7 +520,6 @@
             <h2 class="lines">thanks for visiting!</h2>
             <h3 class="subtitle">Let's stay connected!</h3>
 
-            <!-- <a href="mailto:vinodhkumarvk@outlook.com" id="mailid">vinodhkumarvk@outlook.com</a> -->
             <a href="mailto:mvk.vinodhkumar@gmail" id="mailid"
               >mvk.vinodhkumar@gmail</a
             >
@@ -532,47 +546,16 @@
         </div>
       </div>
       <a id="to-top" href="#top" class="btn btn-dark btn-lg">
-        <!-- <i class="fa fa-chevron-up fa-fw fa-1x"></i> -->
         <img src="images/arrow-up.png" alt="arrow-up" />
       </a>
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script>
-      //Preloader
-      $(window).load(function () {
-        $("#loading").fadeOut(500);
-      });
-
-      //UIDeveloper Animation after complete page load
-      $(window).load(function () {
-        $("h2.stack").addClass("animated flip flipCustomh2");
-        $("h1.author").addClass("animated bounceInDown bounceCustomh1");
-        $("ul.bounceCustomUl1").addClass("animated bounceInLeft");
-        $("ul.bounceCustomUl2").addClass("animated bounceInRight");
-        $("div.intro").addClass("animated fadeIn");
-      });
-
-      //ViewMore button
-      $(document).ready(function () {
-        $("#viewmoreitems").click(function () {
-          $(".showDivs").slideToggle("slow");
-          $(".fadeSlow").addClass("flipInX animated");
-          setTimeout(function () {
-            $("#viewmoreitems").remove();
-          }, 800);
-        });
-      });
-
-      //To open all MyDesign images(which are in Carousel) in a new tab
-      $(document).on("click", ".item img", function (e) {
-        e.preventDefault();
-        var url = $(this).attr("src");
-        window.open(url, "_blank");
-      });
-    </script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -584,10 +567,25 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-
     <!-- uideveloper -->
     <script src="js/lettering.min.js"></script>
     <script src="js/ui.js"></script>
+
+    <script>
+      //Preloader
+      $(window).on("load", function () {
+        $("#loading").fadeOut(500);
+      });
+
+      //UIDeveloper Animation after complete page load
+      $(window).on("load", function () {
+        $("h2.stack").addClass("animated flip flipCustomh2");
+        $("h1.author").addClass("animated bounceInDown bounceCustomh1");
+        $("ul.bounceCustomUl1").addClass("animated bounceInLeft");
+        $("ul.bounceCustomUl2").addClass("animated bounceInRight");
+        $("div.intro").addClass("animated fadeIn");
+      });
+    </script>
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -601,39 +599,13 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
       });
-      // Scrolls to the selected menu item on the page
-      $(function () {
-        $(
-          "a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])"
-        ).click(function () {
-          if (
-            location.pathname.replace(/^\//, "") ==
-              this.pathname.replace(/^\//, "") ||
-            location.hostname == this.hostname
-          ) {
-            var target = $(this.hash);
-            target = target.length
-              ? target
-              : $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-              $("html,body").animate(
-                {
-                  scrollTop: target.offset().top,
-                },
-                1000
-              );
-              return false;
-            }
-          }
-        });
-      });
+
       //#to-top button appears after scrolling
       var fixed = false;
       $(document).scroll(function () {
         if ($(this).scrollTop() > 250) {
           if (!fixed) {
             fixed = true;
-            // $('#to-top').css({position:'fixed', display:'block'});
             $("#to-top").show("slow", function () {
               $("#to-top").css({
                 position: "fixed",
@@ -659,13 +631,13 @@
         var animationName = "progress-bar";
 
         if (scroll >= 1000) {
-          //   alert("1000");
           $("div[class=lefttoright]").addClass(animationName);
         } else {
-          //   alert("Noooo 1000");
           $("div[class=lefttoright]").removeClass(animationName);
         }
       });
     </script>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

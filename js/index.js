@@ -1,29 +1,31 @@
-/** Page-Scroll **/
-function scrollToHome() {
-	$('html, body').animate({scrollTop: $('#home').offset().top}, 1400);
-            return false;
-}
-		
-function scrollToAbout() {
-	$('html, body').animate({ scrollTop: $('#about').offset().top }, 1400);
-    return false;
-}
-		
-function scrollToSkills() {
-	$('html, body').animate({ scrollTop: $('#skills').offset().top }, 1400);
-	return false;
-}
-		
-function scrollToHistory() {
-	$('html, body').animate({ scrollTop: $('#history').offset().top }, 1400);
-	return false;
-}
-		
-function scrollToContact() {
-	$('html, body').animate({ scrollTop: $('#contact').offset().top }, 1200);
-    return false;
+function smoothScroll(new_position) {
+  $("html, body").animate(
+    {
+      scrollTop: new_position.top,
+    },
+    100
+  );
+  return false;
 }
 
+$(document).ready(function () {
+  //Smooth Scroll - homepage links
+  $(".home-section-links li a, body #to-top").on("click", function (e) {
+    e.preventDefault();
 
+    let jump = $(this).attr("href");
+    let new_position = $(jump).offset();
+    smoothScroll(new_position);
+  });
 
+  //Smooth Scroll - sidebar links
+  $("#sidebar-wrapper .sidebar-nav li a").on("click", function (e) {
+    e.preventDefault();
 
+    let jump = $(this).attr("href");
+    let new_position = $(jump).offset();
+    smoothScroll(new_position);
+
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+});
