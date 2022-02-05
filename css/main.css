@@ -166,7 +166,7 @@ ul.home-section-links > li > a {
 
 .full_nav {
   position: fixed;
-  z-index: 1;
+  z-index: -1;
 }
 .full_nav:before,
 .full_nav:after {
@@ -232,6 +232,7 @@ body.full_nav-active .menu-icon__line-right {
 }
 body.full_nav-active .full_nav {
   visibility: visible;
+  z-index: 1;
 }
 body.full_nav-active .full_nav:before,
 body.full_nav-active .full_nav:after {
