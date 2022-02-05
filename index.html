@@ -47,40 +47,25 @@
     <div id="loading"></div>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle pad-sm">
-      <img src="images/ham-ico-1.png" alt="menu toggle icon" />
-    </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li>
-          <a
-            id="menu-close"
-            href="#"
-            class="btn btn-light btn-lg pull-right toggle pad-sm"
-          >
-            <img src="images/close.png" alt="close icon" />
-          </a>
-        </li>
-        <li class="sidebar-brand">
-          <a href="#top">Vinodh Kumar</a>
-        </li>
-        <li>
-          <a href="#top">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#history">History</a>
-        </li>
-        <li>
-          <a href="#portfolio">Projects</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="menu-icon-wrap">
+      <div class="menu-icon">
+        <span class="menu-icon__line menu-icon__line-left"></span>
+        <span class="menu-icon__line"></span>
+        <span class="menu-icon__line menu-icon__line-right"></span>
+      </div>
+    </div>
+
+    <div class="full_nav">
+      <div class="full_nav__content">
+        <ul class="full_nav__list">
+          <li class="full_nav__list-item" data-link="#top">Home</li>
+          <li class="full_nav__list-item" data-link="#about">About</li>
+          <li class="full_nav__list-item" data-link="#skills">Skills</li>
+          <li class="full_nav__list-item" data-link="#history">History</li>
+          <li class="full_nav__list-item" data-link="#portfolio">Works</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Header -->
     <section id="top" class="hero">
@@ -549,9 +534,10 @@
           </div>
         </div>
       </div>
-      <a id="to-top" href="#top" class="btn btn-dark btn-lg">
+      <!-- scroll to top  -->
+      <!-- <a id="to-top" href="#top" class="btn btn-dark btn-lg">
         <img src="images/arrow-up.png" alt="arrow-up" />
-      </a>
+      </a> -->
     </footer>
 
     <!-- jQuery -->
@@ -576,5 +562,21 @@
     <!-- Custom script -->
     <script src="js/index.js"></script>
     <script src="js/works.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/61f7bd7f9bd1f31184da2ab7/1fqnroel2";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
 </html>

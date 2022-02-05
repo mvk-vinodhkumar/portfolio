@@ -26,14 +26,6 @@ $(window).scroll(function () {
   } else {
     $("div[class=lefttoright]").removeClass(animationName);
   }
-
-  //My works
-  let offset = $("#portfolio").offset().top - 100;
-  if ($(window).scrollTop() >= offset) {
-    $("#portfolio .quick-links").show(400);
-  } else {
-    $("#portfolio .quick-links").hide(400);
-  }
 });
 
 // smoothScroll function
@@ -50,17 +42,6 @@ function smoothScroll(new_position) {
 $(document).ready(function () {
   populateWorks();
   populateWebApps();
-
-  // Closes the sidebar menu
-  $("#menu-close").click(function (e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-  });
-  // Opens the sidebar menu
-  $("#menu-toggle").click(function (e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-  });
 
   // Scroll to top button
   let fixed = false;
@@ -96,16 +77,34 @@ $(document).ready(function () {
     smoothScroll(new_position);
   });
 
-  //Smooth Scroll - sidebar links
-  $("#sidebar-wrapper .sidebar-nav li a").on("click", function (e) {
-    e.preventDefault();
+  //Full-page Menu
+  const app = (() => {
+    let body;
+    let menu;
+    let menuItems;
 
-    let jump = $(this).attr("href");
-    let new_position = $(jump).offset();
-    smoothScroll(new_position);
+    const init = () => {
+      body = document.querySelector("body");
+      menu = document.querySelector(".menu-icon");
+      menuItems = document.querySelectorAll(".full_nav__list-item");
 
-    $("#sidebar-wrapper").toggleClass("active");
-  });
+      applyListeners();
+    };
+
+    const applyListeners = () => {
+      menu.addEventListener("click", () =>
+        toggleClass(body, "full_nav-active")
+      );
+    };
+
+    const toggleClass = (element, stringClass) => {
+      if (element.classList.contains(stringClass))
+        element.classList.remove(stringClass);
+      else element.classList.add(stringClass);
+    };
+
+    init();
+  })();
 
   //My works - slide line animation
   const navBar = document.getElementById("works-category-blks");
@@ -173,5 +172,14 @@ $(document).ready(function () {
   $("body").on("click", ".block-wrap .blk-item", function () {
     let target = $(this).data("link");
     window.open(target, "_blank", "noopener,noreferrer");
+  });
+
+  //Full Nav
+  $("body").on("click", ".full_nav__list li", function () {
+    let target = $(this).data("link");
+    let new_position = $(target).offset();
+    smoothScroll(new_position);
+
+    $("body").toggleClass("full_nav-active");
   });
 });

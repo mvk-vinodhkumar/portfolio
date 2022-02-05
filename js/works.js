@@ -228,7 +228,7 @@ function populateWebApps() {
 
   function workTemplate(work) {
     return `
-    <div class="blk-item web-app" data-link="${work.link}">
+    <div class="blk-item web-app">
         <div class="top-blk">
             <div class="desc">
                 <h4>${work.name}</h4>
