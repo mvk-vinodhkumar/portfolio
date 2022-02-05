@@ -169,7 +169,7 @@ $(document).ready(function () {
   // });
 
   //Works - external link
-  $("body").on("click", ".block-wrap .blk-item", function () {
+  $("body").on("click", "#websites-wrap.block-wrap .blk-item", function () {
     let target = $(this).data("link");
     window.open(target, "_blank", "noopener,noreferrer");
   });
