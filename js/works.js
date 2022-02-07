@@ -101,29 +101,10 @@ function populateWorks() {
       link: "https://www.livezy.com/",
     },
     {
-      name: "Create Studio",
-      type: "Photography",
-      roles: [
-        "Wireframe",
-        "Design",
-        "Front-end",
-        "Content Strategy",
-        "Testing",
-        "Lead",
-      ],
-      link: "http://www.createstudio.in/",
-    },
-    {
       name: "Argo Facades",
       type: "Business",
       roles: ["Technical Coordinator", "UI Advisor"],
       link: "https://argofacades.in/",
-    },
-    {
-      name: "Excomatix",
-      type: "Business",
-      roles: ["Technical Coordinator", "UI Advisor"],
-      link: "https://www.excomatix.com/",
     },
     {
       name: "Marwan Electrical",
@@ -136,6 +117,25 @@ function populateWorks() {
       type: "Pastries",
       roles: ["Lead"],
       link: "https://www.thistlebakeville.com/",
+    },
+    {
+      name: "Excomatix",
+      type: "Business",
+      roles: ["Technical Coordinator", "UI Advisor"],
+      link: "https://www.excomatix.com/",
+    },
+    {
+      name: "Create Studio",
+      type: "Photography",
+      roles: [
+        "Wireframe",
+        "Design",
+        "Front-end",
+        "Content Strategy",
+        "Testing",
+        "Lead",
+      ],
+      link: "http://www.createstudio.in/",
     },
     {
       name: "Re-dT",
@@ -177,18 +177,6 @@ function populateWorks() {
 function populateWebApps() {
   const worksData = [
     {
-      name: "Visitor Management System",
-      desc: "V.M.S. can be integrated with the ‘Frequency’ Tablet to document and track visitors within the campus. The ‘Frequency’ tablet can be used to record required data from the visitor and automatically generate an E-pass which would essentially constitute their name, type, entry time and the host(employee) name & designation. The system can be fashioned to accept different types of visitors based on requirements and even be used to blacklist certain people and effectively barring them from entry. V.M.S, too is ready for integration with six30 labs’ other products.",
-      roles: ["Wireframe", "Design", "Front-end"],
-      link: "https://www.builtech.co.in/",
-    },
-    {
-      name: "Frequency",
-      desc: "It acts as a normal Tablet but is equipped with a fingerprint reader that can be used to record login and logout times of employees along with geo-tagging capabilities. This tablet will help strengthen security in and around the campus. It comes with a rugged casing that can withstand drops and shocks and can be connected to a network through Wi-fi or mobile data (3G Sim). It is easy to install without the need for any cable and retains data even in case of power failure. By providing for simple integration with Six30 labs’ other products, this tablet augments data management for your company.",
-      roles: ["Front-end"],
-      link: "https://www.builtech.co.in/",
-    },
-    {
       name: "SYNC",
       desc: "With SYNC, you will be able to share organise and share any type of file within your company and share the same with employees. Customizing of access levels of individual files will ensure your control over your data and seamless sharing improves communication and efficiency.",
       roles: ["Wireframe", "Design", "Front-end"],
@@ -198,6 +186,18 @@ function populateWebApps() {
       name: "Asset Management",
       desc: "Our asset management software enables you to store and access all relevant data regarding your company’s asset procurement cycle and related information with a few clicks. The goal is to make recall of such information simple and quick.",
       roles: ["Design", "Front-end"],
+      link: "https://www.builtech.co.in/",
+    },
+    {
+      name: "Frequency",
+      desc: "It acts as a normal Tablet but is equipped with a fingerprint reader that can be used to record login and logout times of employees along with geo-tagging capabilities. This tablet will help strengthen security in and around the campus. It comes with a rugged casing that can withstand drops and shocks and can be connected to a network through Wi-fi or mobile data (3G Sim). It is easy to install without the need for any cable and retains data even in case of power failure. By providing for simple integration with Six30 labs’ other products, this tablet augments data management for your company.",
+      roles: ["Front-end"],
+      link: "https://www.builtech.co.in/",
+    },
+    {
+      name: "Visitor Management System",
+      desc: "V.M.S. can be integrated with the ‘Frequency’ Tablet to document and track visitors within the campus. The ‘Frequency’ tablet can be used to record required data from the visitor and automatically generate an E-pass which would essentially constitute their name, type, entry time and the host(employee) name & designation. The system can be fashioned to accept different types of visitors based on requirements and even be used to blacklist certain people and effectively barring them from entry. V.M.S, too is ready for integration with six30 labs’ other products.",
+      roles: ["Wireframe", "Design", "Front-end"],
       link: "https://www.builtech.co.in/",
     },
     {
