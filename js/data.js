@@ -247,3 +247,98 @@ function populateWebApps() {
   ${worksData.map(workTemplate).join("")}
 `;
 }
+
+//Awards
+function populateAwards() {
+  const awardsData = [
+    {
+      name: "Outstanding Performance & Superior Dedication",
+      company: "At Six30 Labs",
+      year: "2021",
+    },
+    {
+      name: "First Class Service",
+      company: "At Six30 Labs",
+      year: "2020",
+    },
+    {
+      name: "Circle of Joy",
+      company: "At Six30 Labs",
+      year: "2019",
+    },
+    {
+      name: "All Day Everyday",
+      company: "At Six30 Labs",
+      year: "2018-19",
+    },
+    {
+      name: "Best Instructor of the Month",
+      company: "At Internet Academy",
+      year: "2016",
+    },
+  ];
+
+  function awardTemplate(award) {
+    return `
+    <div class="timeline-block">
+      <div class="timeline-icon">
+        <i class="fa-mine fa fa-shield"></i>
+      </div>
+      <div class="exp-head">
+        <p class="time-frame">${award.year}</p>
+        <h3>${award.name}</h3>
+        <h4>${award.company}</h4>
+      </div>
+    </div>
+  `;
+  }
+
+  document.getElementById("awards-wrap").innerHTML = `
+  ${awardsData.map(awardTemplate).join("")}
+`;
+}
+
+//Certifications
+function populateCertifications() {
+  const certData = [
+    {
+      name: "Graphic Design and Web-Development",
+      academy: "Internet Academy (W3C Member)",
+      year: "2016",
+    },
+    {
+      name: "Software for Embedded Systems",
+      academy: "MindSculptor Systems Pvt. Ltd.",
+      year: "2015",
+    },
+    {
+      name: "Professional C++ and OOPs",
+      academy: "MindSculptor Systems Pvt. Ltd.",
+      year: "2015",
+    },
+    {
+      name: "Core Java",
+      academy: "MindSculptor Systems Pvt. Ltd.",
+      year: "2015",
+    },
+  ];
+
+  function certTemplate(cert) {
+    return `
+    <div class="timeline-block sht">
+      <div class="timeline-icon">
+        <i class="fa-mine fa fa-certificate"></i>
+      </div>
+      <div class="exp-head">
+        <p class="time-frame">${cert.year}</p>
+        <h3>${cert.name}</h3>
+        <h4>${cert.academy}</h4>
+      </div>
+    </div>
+  `;
+  }
+
+  document.getElementById("cert-wrap").innerHTML = `
+  ${certData.map(certTemplate).join("")}
+`;
+}

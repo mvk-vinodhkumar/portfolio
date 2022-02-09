@@ -42,6 +42,8 @@ function smoothScroll(new_position) {
 $(document).ready(function () {
   populateWorks();
   populateWebApps();
+  populateAwards();
+  populateCertifications();
 
   // Scroll to top button
   let fixed = false;
