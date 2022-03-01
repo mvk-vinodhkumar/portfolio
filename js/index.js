@@ -79,35 +79,6 @@ $(document).ready(function () {
     smoothScroll(new_position);
   });
 
-  //Full-page Menu
-  const app = (() => {
-    let body;
-    let menu;
-    let menuItems;
-
-    const init = () => {
-      body = document.querySelector("body");
-      menu = document.querySelector(".menu-icon");
-      menuItems = document.querySelectorAll(".full_nav__list-item");
-
-      applyListeners();
-    };
-
-    const applyListeners = () => {
-      menu.addEventListener("click", () =>
-        toggleClass(body, "full_nav-active")
-      );
-    };
-
-    const toggleClass = (element, stringClass) => {
-      if (element.classList.contains(stringClass))
-        element.classList.remove(stringClass);
-      else element.classList.add(stringClass);
-    };
-
-    init();
-  })();
-
   //My works - slide line animation
   const navBar = document.getElementById("works-category-blks");
   const navUnderline = navBar.querySelector(".slide-line");
@@ -140,35 +111,7 @@ $(document).ready(function () {
       .find(".active")
       .removeClass("active");
     $(this).addClass("active");
-
-    // if (target == "#websites-wrap") {
-    //   $(".quick-links").find("span[data-block='#websites-wrap']").click();
-    // } else if (target == "#webapps-wrap") {
-    //   $(".quick-links").find("span[data-block='#webapps-wrap']").click();
-    // }
   });
-
-  //My works - right-side links
-  // $("#portfolio .quick-links span").on("click", function (e) {
-  //   e.preventDefault();
-  //   const target = $(this).data("block");
-  //   $(".works-category").find(target).show().siblings("div").hide();
-  //   let pos = $("#portfolio").offset();
-  //   smoothScroll(pos);
-  //   populateWorks();
-  //   populateWebApps();
-
-  //   $(this).parent(".quick-links").find(".active").removeClass("active");
-  //   $(this).addClass("active");
-
-  //   if (target == "#websites-wrap") {
-  //     $("#works-category-blks").find("a[href='#websites-wrap']").click();
-  //     navBar.children[0].click();
-  //   } else if (target == "#webapps-wrap") {
-  //     $("#works-category-blks").find("a[href='#webapps-wrap']").click();
-  //     navBar.children[1].click();
-  //   }
-  // });
 
   //Works - external link
   $("body").on("click", "#websites-wrap.block-wrap .blk-item", function () {
@@ -177,11 +120,38 @@ $(document).ready(function () {
   });
 
   //Full Nav
-  $("body").on("click", ".full_nav__list li", function () {
+  const app = (() => {
+    let body;
+    let menu;
+    let menuItems;
+
+    const init = () => {
+      body = document.querySelector("body");
+      menu = document.querySelector(".menu-icon");
+      menuItems = document.querySelectorAll(".nav__list-item");
+
+      applyListeners();
+    };
+
+    const applyListeners = () => {
+      menu.addEventListener("click", () => toggleClass(body, "nav-active"));
+    };
+
+    const toggleClass = (element, stringClass) => {
+      if (element.classList.contains(stringClass))
+        element.classList.remove(stringClass);
+      else element.classList.add(stringClass);
+    };
+
+    init();
+  })();
+
+  //Full nav li items
+  $("body").on("click", ".nav__list li", function () {
     let target = $(this).data("link");
     let new_position = $(target).offset();
     smoothScroll(new_position);
 
-    $("body").toggleClass("full_nav-active");
+    $("body").toggleClass("nav-active");
   });
 });
