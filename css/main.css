@@ -1016,10 +1016,6 @@ a#resume i {
   bottom: 0;
   padding: 0 1.25rem 1.25rem;
 }
-.portfolio .block-wrap .blk-item .btm-blk.web-app {
-  /* position: unset;
-  padding: unset; */
-}
 .portfolio .block-wrap .blk-item .btm-blk span {
   font-size: 0.85rem;
   display: inline-block;
@@ -1035,6 +1031,16 @@ a#resume i {
   -webkit-filter: grayscale(0);
 }
 
+.portfolio .vk-info-wrap {
+  width: 150px;
+  margin: 3em auto 0.5em;
+}
+.portfolio .vk-info-wrap img {
+  width: 100%;
+}
+.portfolio .block-wrap .blk-item.web-app {
+  cursor: default;
+}
 /******************** end ****************/
 
 /* flipInX  portfolio*/
