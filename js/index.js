@@ -44,6 +44,8 @@ $(document).ready(function () {
   populateWebApps();
   populateAwards();
   populateCertifications();
+  populateExperience();
+  populateEducation();
 
   // Scroll to top button
   let fixed = false;
@@ -114,10 +116,14 @@ $(document).ready(function () {
   });
 
   //Works - external link
-  $("body").on("click", "#websites-wrap.block-wrap .blk-item", function () {
-    let target = $(this).data("link");
-    window.open(target, "_blank", "noopener,noreferrer");
-  });
+  $("body").on(
+    "click",
+    "#websites-wrap.block-wrap .blk-item .ext-link",
+    function () {
+      let target = $(this).data("link");
+      window.open(target, "_blank", "noopener,noreferrer");
+    }
+  );
 
   //Full Nav
   const app = (() => {

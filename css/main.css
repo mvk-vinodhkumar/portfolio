@@ -141,7 +141,7 @@ ul.home-section-links > li > a {
 }
 .menu-icon {
   height: 30px;
-  width: 30px px;
+  width: 30px;
   position: fixed;
   z-index: 2;
   left: 58px;
@@ -278,10 +278,7 @@ body.nav-active .nav__list-item:nth-child(5) {
   width: 100%;
   height: 100%;
   background: url(../images/bg-img.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
 }
 
 /* ui developer*/
@@ -753,13 +750,13 @@ h3.credentials {
 h3.credentials::before {
   content: "";
   display: block;
-  height: 32px;
-  width: 4.3rem;
+  height: 30px;
+  width: 4.4rem;
   position: absolute;
   top: 50%;
   left: -4px;
   margin-top: -2px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.06em solid #ccc;
 }
 
 .history h3.subtitle {
@@ -896,8 +893,6 @@ i.fa-mine:before {
 }
 
 a#resume i {
-  margin-left: -3px 0 0 12px;
-  vertical-align: top;
   font-size: 25px;
 }
 
@@ -976,21 +971,45 @@ a#resume i {
 }
 
 .portfolio .block-wrap .blk-item {
-  background-color: #2d3748;
+  /* background-color: #2d3748; */
+  background-color: #363636;
   min-height: 11rem;
   max-height: 11rem;
   border-radius: 1px;
   position: relative;
   padding: 1.25rem;
-  cursor: pointer;
   text-align: left;
 
-  filter: gray;
+  /* filter: gray;
   -webkit-filter: grayscale(1);
-  -webkit-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out; */
 }
 .portfolio .block-wrap .blk-item.web-app {
   max-height: unset;
+}
+
+.portfolio .block-wrap .blk-item .ext-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #545454;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  color: #dfd2d2;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolio .block-wrap .blk-item .ext-link i {
+  position: absolute;
+  top: 9px;
+  right: 6px;
+  font-size: 1rem;
+}
+.portfolio .block-wrap .blk-item .ext-link:hover {
+  background-color: #fefefe;
+  color: #05070c;
 }
 
 .portfolio .block-wrap .blk-item .top-blk h4 {
@@ -1027,8 +1046,8 @@ a#resume i {
 }
 
 .portfolio .block-wrap .blk-item:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
+  /* filter: none;
+  -webkit-filter: grayscale(0); */
 }
 
 .portfolio .vk-info-wrap {

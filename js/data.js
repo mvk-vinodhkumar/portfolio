@@ -119,6 +119,12 @@ function populateWorks() {
       link: "https://www.thistlebakeville.com/",
     },
     {
+      name: "Re-dT",
+      type: "REAL ESTATE",
+      roles: ["Front-end", "Testing", "Lead"],
+      link: "https://www.re-dt.com/",
+    },
+    {
       name: "Excomatix",
       type: "Business",
       roles: ["Technical Coordinator", "UI Advisor"],
@@ -137,12 +143,6 @@ function populateWorks() {
       ],
       link: "http://www.createstudio.in/",
     },
-    {
-      name: "Re-dT",
-      type: "REAL ESTATE",
-      roles: ["Front-end", "Testing", "Lead"],
-      link: "https://www.re-dt.com/",
-    },
   ];
 
   function rolesList(roles) {
@@ -153,7 +153,10 @@ function populateWorks() {
 
   function workTemplate(work) {
     return `
-    <div class="blk-item" data-link="${work.link}">
+    <div class="blk-item">
+        <div class="ext-link" data-link="${
+          work.link
+        }" title="View Website"><i class="fa fa-link" aria-hidden="true"></i></div>
         <div class="top-blk">
             <div class="desc">
                 <h4>${work.name}</h4>
@@ -262,20 +265,20 @@ function populateAwards() {
       company: "At Six30 Labs",
       year: "2021",
     },
+    // {
+    //   name: "First Class Service",
+    //   company: "At Six30 Labs",
+    //   year: "2020",
+    // },
     {
-      name: "First Class Service",
+      name: "Circle of Joy & First Class Service",
       company: "At Six30 Labs",
-      year: "2020",
-    },
-    {
-      name: "Circle of Joy",
-      company: "At Six30 Labs",
-      year: "2019",
+      year: "2019 - 2020",
     },
     {
       name: "All Day Everyday",
       company: "At Six30 Labs",
-      year: "2018-19",
+      year: "2017 - 2018",
     },
     {
       name: "Best Instructor of the Month",
@@ -331,7 +334,7 @@ function populateCertifications() {
 
   function certTemplate(cert) {
     return `
-    <div class="timeline-block sht">
+    <div class="timeline-block">
       <div class="timeline-icon">
         <i class="fa-mine fa fa-certificate"></i>
       </div>
@@ -346,5 +349,95 @@ function populateCertifications() {
 
   document.getElementById("cert-wrap").innerHTML = `
   ${certData.map(certTemplate).join("")}
+`;
+}
+
+//Experience
+function populateExperience() {
+  const expData = [
+    {
+      company: "Six30 Labs",
+      timePeriod: "2016 - PRESENT",
+      link: "https://www.six30labs.io/",
+      position: "Software Engineer/ Principal Engineer",
+    },
+    {
+      company: "Internet Academy (W3C Member)",
+      timePeriod: "2016",
+      link: "https://www.internetacademy.co.in",
+      position: "Software Engineer & Instructor",
+    },
+    {
+      company: "Kudelski Group",
+      timePeriod: "2015",
+      link: "https://www.nagra.com",
+      position: "Software Engineer",
+    },
+  ];
+
+  function expTemplate(exp) {
+    return `
+    <div class="exp">
+      <div class="exp-icon">
+        <i class="fa-mine fa fa-desktop"></i>
+      </div>
+      <div class="exp-head">
+        <p class="time-frame">${exp.timePeriod}</p>
+        <h3>
+          <a
+            href="${exp.link}"
+            target="_blank"
+            class="linkout"
+            >${exp.company}</a
+          >
+        </h3>
+        <h4>${exp.position}</h4>
+      </div>
+    </div>`;
+  }
+
+  document.getElementById("exp-wrap").innerHTML = `
+  ${expData.map(expTemplate).join("")}
+`;
+}
+
+//Education
+function populateEducation() {
+  const eduData = [
+    {
+      college: "HKBK College of Engineering",
+      timePeriod: "2010 - 2014",
+      stream: "Computer Science & Engineering",
+      info: "Graduated from HKBKCE with a Major in Computer Science & Engineering.",
+    },
+    {
+      college: "St. Joseph's College",
+      timePeriod: "2008 - 2010",
+      stream: "Computer Science",
+      info: "Graduated from St. Joseph's Pre-University College with a Major in Computer Science.",
+    },
+  ];
+
+  function eduTemplate(edu) {
+    return `
+    <div class="timeline-block">
+      <div class="timeline-icon">
+        <i class="fa-mine fa fa-graduation-cap"></i>
+      </div>
+      <div class="exp-head">
+        <p class="time-frame">${edu.timePeriod}</p>
+        <h3>${edu.college}</h3>
+        <h4>${edu.stream}</h4>
+      </div>
+      <div class="specialisation">
+        <p>
+          ${edu.info}
+        </p>
+      </div>
+    </div>`;
+  }
+
+  document.getElementById("edu-wrap").innerHTML = `
+  ${eduData.map(eduTemplate).join("")}
 `;
 }
