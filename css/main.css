@@ -1059,7 +1059,7 @@ a#resume i {
   width: 100%;
 }
 .portfolio .block-wrap .blk-item.web-app {
-  cursor: default;
+  cursor: unset;
 }
 /******************** end ****************/
 

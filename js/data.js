@@ -39,18 +39,18 @@ function populateWorks() {
       ],
       link: "https://www.six30labs.io/",
     },
-    {
-      name: "Colliers | Synergy",
-      type: "Property Development",
-      roles: [
-        "Design",
-        "Front-end",
-        "Content Strategy",
-        "Testing",
-        "Technical Coordinator",
-      ],
-      link: "https://www.synergyind.com/",
-    },
+    // {
+    //   name: "Colliers | Synergy",
+    //   type: "Property Development",
+    //   roles: [
+    //     "Design",
+    //     "Front-end",
+    //     "Content Strategy",
+    //     "Testing",
+    //     "Technical Coordinator",
+    //   ],
+    //   link: "https://www.synergyind.com/",
+    // },
     //   {
     //     name: "Priyanka Kinger",
     //     type: "Fitness Training",
@@ -112,12 +112,12 @@ function populateWorks() {
       roles: ["Technical Coordinator", "UI Advisor"],
       link: "https://www.marwanelectrical.com/",
     },
-    {
-      name: "Thistle Bakeville",
-      type: "Pastries",
-      roles: ["Lead"],
-      link: "https://www.thistlebakeville.com/",
-    },
+    // {
+    //   name: "Thistle Bakeville",
+    //   type: "Pastries",
+    //   roles: ["Lead"],
+    //   link: "https://www.thistlebakeville.com/",
+    // },
     {
       name: "Re-dT",
       type: "REAL ESTATE",
@@ -181,7 +181,7 @@ function populateWebApps() {
   const worksData = [
     {
       name: "SYNC",
-      desc: "With SYNC, you will be able to share organise and share any type of file within your company and share the same with employees. Customizing of access levels of individual files will ensure your control over your data and seamless sharing improves communication and efficiency.",
+      desc: "With SYNC, you will be able to organize and share any type of file within your company and share the same with employees. Customizing the access levels of individual files will ensure your control over your data and seamless sharing improves communication and efficiency.",
       roles: ["Wireframe", "Design", "Front-end"],
       link: "",
     },
@@ -193,13 +193,13 @@ function populateWebApps() {
     },
     {
       name: "Frequency",
-      desc: "It acts as a normal Tablet but is equipped with a fingerprint reader that can be used to record login and logout times of employees along with geo-tagging capabilities. This tablet will help strengthen security in and around the campus. It comes with a rugged casing that can withstand drops and shocks and can be connected to a network through Wi-fi or mobile data (3G Sim). It is easy to install without the need for any cable and retains data even in case of power failure. By providing for simple integration with Six30 labs’ other products, this tablet augments data management for your company.",
+      desc: "It acts as a normal Tablet but is equipped with a fingerprint reader that can be used to record login and logout times of employees along with geo-tagging capabilities. This tablet will help strengthen security in and around the campus. It comes with a rugged casing that can withstand drops and shocks and can be connected to a network through Wi-fi or mobile data (3G Sim). It is easy to install without the need for any cable and retains data even in case of power failure.",
       roles: ["Front-end"],
       link: "",
     },
     {
       name: "Visitor Management System",
-      desc: "V.M.S. can be integrated with the ‘Frequency’ Tablet to document and track visitors within the campus. The ‘Frequency’ tablet can be used to record required data from the visitor and automatically generate an E-pass which would essentially constitute their name, type, entry time and the host(employee) name & designation. The system can be fashioned to accept different types of visitors based on requirements and even be used to blacklist certain people and effectively barring them from entry. V.M.S, too is ready for integration with six30 labs’ other products.",
+      desc: "VMS can be integrated with the ‘Frequency’ Tablet to document and track visitors within the campus. The ‘Frequency’ tablet can be used to record required data from the visitor and automatically generate an E-pass which would essentially constitute their name, type, entry time and the host(employee) name & designation. The system can be fashioned to accept different types of visitors based on requirements and even be used to blacklist certain people and effectively barring them from entry.",
       roles: ["Wireframe", "Design", "Front-end"],
       link: "",
     },
