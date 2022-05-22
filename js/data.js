@@ -143,12 +143,12 @@ function populateWorks() {
       ],
       link: "http://www.createstudio.in/",
     },
-  ];
+  ]
 
   function rolesList(roles) {
     return `
         ${roles.map((role) => `<span>${role}</span>`).join("")}
-    `;
+    `
   }
 
   function workTemplate(work) {
@@ -168,12 +168,12 @@ function populateWorks() {
             ${work.roles ? rolesList(work.roles) : ""}
         </div>
     </div>
-  `;
+  `
   }
 
   document.getElementById("websites-wrap").innerHTML = `
   ${worksData.map(workTemplate).join("")}
-`;
+`
 }
 
 //Web-apps
@@ -227,12 +227,12 @@ function populateWebApps() {
       roles: ["Content Strategy", "Technical Coordinator"],
       link: "",
     },
-  ];
+  ]
 
   function rolesList(roles) {
     return `
         ${roles.map((role) => `<span>${role}</span>`).join("")}
-    `;
+    `
   }
 
   function workTemplate(work) {
@@ -249,12 +249,12 @@ function populateWebApps() {
             ${work.roles ? rolesList(work.roles) : ""}
         </div>
     </div>
-  `;
+  `
   }
 
   document.getElementById("webapps-wrap").innerHTML = `
   ${worksData.map(workTemplate).join("")}
-`;
+`
 }
 
 //Awards
@@ -285,7 +285,7 @@ function populateAwards() {
       company: "At Internet Academy",
       year: "2016",
     },
-  ];
+  ]
 
   function awardTemplate(award) {
     return `
@@ -299,12 +299,12 @@ function populateAwards() {
         <h4>${award.company}</h4>
       </div>
     </div>
-  `;
+  `
   }
 
   document.getElementById("awards-wrap").innerHTML = `
   ${awardsData.map(awardTemplate).join("")}
-`;
+`
 }
 
 //Certifications
@@ -330,7 +330,7 @@ function populateCertifications() {
       academy: "MindSculptor Systems Pvt. Ltd.",
       year: "2015",
     },
-  ];
+  ]
 
   function certTemplate(cert) {
     return `
@@ -344,20 +344,26 @@ function populateCertifications() {
         <h4>${cert.academy}</h4>
       </div>
     </div>
-  `;
+  `
   }
 
   document.getElementById("cert-wrap").innerHTML = `
   ${certData.map(certTemplate).join("")}
-`;
+`
 }
 
 //Experience
 function populateExperience() {
   const expData = [
     {
+      company: "Mantra Solutions",
+      timePeriod: "PRESENT",
+      link: "http://www.mantrasolutions.com/",
+      position: "Sr. Software Engineer",
+    },
+    {
       company: "Six30 Labs",
-      timePeriod: "2016 - PRESENT",
+      timePeriod: "2016 - 2022",
       link: "https://www.six30labs.io/",
       position: "Software Engineer/ Principal Engineer",
     },
@@ -373,7 +379,7 @@ function populateExperience() {
       link: "https://www.nagra.com",
       position: "Software Engineer",
     },
-  ];
+  ]
 
   function expTemplate(exp) {
     return `
@@ -393,12 +399,12 @@ function populateExperience() {
         </h3>
         <h4>${exp.position}</h4>
       </div>
-    </div>`;
+    </div>`
   }
 
   document.getElementById("exp-wrap").innerHTML = `
   ${expData.map(expTemplate).join("")}
-`;
+`
 }
 
 //Education
@@ -416,7 +422,7 @@ function populateEducation() {
       stream: "Computer Science",
       info: "Graduated from St. Joseph's Pre-University College with a Major in Computer Science.",
     },
-  ];
+  ]
 
   function eduTemplate(edu) {
     return `
@@ -434,10 +440,10 @@ function populateEducation() {
           ${edu.info}
         </p>
       </div>
-    </div>`;
+    </div>`
   }
 
   document.getElementById("edu-wrap").innerHTML = `
   ${eduData.map(eduTemplate).join("")}
-`;
+`
 }
