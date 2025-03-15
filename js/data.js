@@ -2,42 +2,62 @@
 function populateWorks() {
   const worksData = [
     {
-      name: "Builtech Palakkad",
-      type: "Real Estate",
-      roles: ["Wireframe", "Front-end", "Technical Coordinator", "Testing"],
-      link: "https://www.builtech.co.in/",
+      name: 'Spark Radiology',
+      type: 'Healthcare',
+      roles: ['Lead', 'Technical Coordinator'],
+      link: 'https://sparkradiology.com/',
     },
     {
-      name: "Edge 3D Technologies",
-      type: "3D Scanning",
+      name: 'Aratt',
+      type: 'Real Estate',
+      roles: ['Lead', 'Technical Coordinator', 'UI Advisor'],
+      link: 'https://www.aratt.in/',
+    },
+    {
+      name: 'Builtech Palakkad',
+      type: 'Real Estate',
       roles: [
-        "Wireframe",
-        "Design",
-        "Front-end",
-        "Content Strategy",
-        "Testing",
-        "Lead",
+        'Wireframe',
+        'Front-end',
+        'Technical Coordinator',
+        'Client Coordinator',
       ],
-      link: "https://www.edge3d.io/",
+      link: 'https://www.builtech.co.in/',
     },
     {
-      name: "Design Your Home Space",
-      type: "Interior Design",
-      roles: ["Wireframe", "Front-end", "Testing", "Technical Coordinator"],
-      link: "https://www.dyhs.in/",
-    },
-    {
-      name: "Six30 Labs",
-      type: "Technology",
+      name: 'Reverbian',
+      type: 'Fractional Marketing',
       roles: [
-        "Wireframe",
-        "Design",
-        "Front-end",
-        "Content Strategy",
-        "Testing",
-        "Lead",
+        'Lead',
+        'Technical Coordinator',
+        'Client Coordinator',
+        'UI & Design Advisor',
       ],
-      link: "https://www.six30labs.io/",
+      link: 'https://www.builtech.co.in/',
+    },
+    {
+      name: 'Ayatana',
+      type: 'Resort',
+      roles: ['Lead', 'Technical Coordinator'],
+      link: 'https://ayatanaresorts.com/',
+    },
+    {
+      name: 'Edge 3D Technologies',
+      type: '3D Scanning',
+      roles: ['Lead', 'Technical Coordinator'],
+      link: 'https://www.edge3d.io/',
+    },
+    {
+      name: 'Design Your Home Space',
+      type: 'Interior Design',
+      roles: ['Wireframe', 'Front-end', 'Testing', 'Technical Coordinator'],
+      link: 'https://www.dyhs.in/',
+    },
+    {
+      name: 'Six30 Labs',
+      type: 'Technology',
+      roles: ['Design', 'Lead', 'Technical Coordinator'],
+      link: 'https://www.six30labs.io/',
     },
     // {
     //   name: "Colliers | Synergy",
@@ -64,91 +84,88 @@ function populateWorks() {
     //     link: "https://priyankakinger.com/",
     //   },
     {
-      name: "Internet Academy",
-      type: "Business",
-      roles: ["Design", "Front-end", "Testing"],
-      link: "https://www.internetacademy.co.in/",
+      name: 'Internet Academy',
+      type: 'Business',
+      roles: ['Design', 'Front-end', 'Testing'],
+      link: 'https://www.internetacademy.co.in/',
     },
     {
-      name: "Bloomlabs Infotech",
-      type: "Training Academy",
-      roles: ["Wireframe", "Design", "Front-end", "Testing", "Lead"],
-      link: "https://bloomlabs.in/",
+      name: 'Bloomlabs Infotech',
+      type: 'Training Academy',
+      roles: ['Wireframe', 'Design', 'Front-end', 'Testing', 'Lead'],
+      link: 'https://bloomlabs.in/',
     },
     {
-      name: "SanecoleTechnologies",
-      type: "Business",
-      roles: ["UI Advisor", "Technical Coordinator"],
-      link: "https://www.sanecole.com/",
+      name: 'SanecoleTechnologies',
+      type: 'Business',
+      roles: ['UI Advisor', 'Technical Coordinator'],
+      link: 'https://www.sanecole.com/',
     },
     {
-      name: "Livezy",
-      type: "Fitness Training",
-      roles: [
-        "Wireframe",
-        "Design",
-        "Front-end",
-        "Content Strategy",
-        "Testing",
-        "Lead",
-      ],
-      link: "https://www.livezy.com/",
+      name: 'Livezy',
+      type: 'Fitness Training',
+      roles: ['Design', 'Front-end', 'Content Strategy', 'Lead'],
+      link: 'https://www.livezy.com/',
     },
     {
-      name: "Synergy MEA",
-      type: "Construction Services",
+      name: 'Synergy MEA',
+      type: 'Construction Services',
+      roles: ['Lead'],
+      link: 'https://synergymea.com/',
+    },
+    {
+      name: 'Argo Facades',
+      type: 'Business',
+      roles: ['Technical Coordinator', 'UI Advisor'],
+      link: 'https://argofacades.in/',
+    },
+    {
+      name: 'Marwan Electrical',
+      type: 'Business',
+      roles: ['Technical Coordinator', 'UI Advisor'],
+      link: 'https://www.marwanelectrical.com/',
+    },
+    {
+      name: "Thistle Bakeville",
+      type: "Pastries",
       roles: ["Lead"],
-      link: "https://www.livezy.com/",
-    },
-    {
-      name: "Argo Facades",
-      type: "Business",
-      roles: ["Technical Coordinator", "UI Advisor"],
-      link: "https://argofacades.in/",
-    },
-    {
-      name: "Marwan Electrical",
-      type: "Business",
-      roles: ["Technical Coordinator", "UI Advisor"],
-      link: "https://www.marwanelectrical.com/",
+      link: "https://www.thistlebakeville.com/",
     },
     // {
-    //   name: "Thistle Bakeville",
-    //   type: "Pastries",
-    //   roles: ["Lead"],
-    //   link: "https://www.thistlebakeville.com/",
+    //   name: 'Re-dT',
+    //   type: 'REAL ESTATE',
+    //   roles: ['Front-end', 'Testing', 'Lead'],
+    //   link: 'https://www.re-dt.com/',
     // },
     {
-      name: "Re-dT",
-      type: "REAL ESTATE",
-      roles: ["Front-end", "Testing", "Lead"],
-      link: "https://www.re-dt.com/",
+      name: 'Excomatix',
+      type: 'Business',
+      roles: ['Technical Coordinator', 'UI Advisor'],
+      link: 'https://www.excomatix.com/',
     },
     {
-      name: "Excomatix",
-      type: "Business",
-      roles: ["Technical Coordinator", "UI Advisor"],
-      link: "https://www.excomatix.com/",
-    },
-    {
-      name: "Create Studio",
-      type: "Photography",
+      name: 'She Commerz',
+      type: 'NGO',
       roles: [
-        "Wireframe",
-        "Design",
-        "Front-end",
-        "Content Strategy",
-        "Testing",
-        "Lead",
+        'Content Strategy',
+        'Lead',
+        'Technical Coordinator',
+        'Client Coordinator',
       ],
-      link: "http://www.createstudio.in/",
+      link: 'https://shecommerz.com/',
     },
-  ]
+    {
+      name: 'Create Studio',
+      type: 'Photography',
+      roles: ['Front-end', 'Content Strategy', 'Lead'],
+      link: 'http://www.createstudio.in/',
+    },
+  ];
 
   function rolesList(roles) {
     return `
-        ${roles.map((role) => `<span>${role}</span>`).join("")}
-    `
+        ${roles.map((role) => `<span>${role}</span>`).join('')}
+    `;
   }
 
   function workTemplate(work) {
@@ -165,74 +182,86 @@ function populateWorks() {
         </div>
 
         <div class="btm-blk">
-            ${work.roles ? rolesList(work.roles) : ""}
+            ${work.roles ? rolesList(work.roles) : ''}
         </div>
     </div>
-  `
+  `;
   }
 
-  document.getElementById("websites-wrap").innerHTML = `
-  ${worksData.map(workTemplate).join("")}
-`
+  document.getElementById('websites-wrap').innerHTML = `
+  ${worksData.map(workTemplate).join('')}
+`;
 }
 
 //Web-apps
 function populateWebApps() {
   const worksData = [
     {
-      name: "SYNC",
-      desc: "With SYNC, you will be able to organize and share any type of file within your company and share the same with employees. Customizing the access levels of individual files will ensure your control over your data and seamless sharing improves communication and efficiency.",
-      roles: ["Wireframe", "Design", "Front-end"],
-      link: "",
+      name: 'COPRO',
+      desc: 'COPRO is a comprehensive web app designed to streamline company operations by enabling secure file organization and sharing with customizable access controls. It enhances communication and efficiency with features like task management, project management, messaging, daily reports, and minutes of meetings (MoM). Additionally, it supports over 24 types of forms and accommodates multiple roles and responsibilities, ensuring smooth workflow management across teams.',
+      roles: ['Wireframe', 'Design', 'Front-end', 'Technical Coordinator'],
+      link: '',
     },
     {
-      name: "Asset Management",
-      desc: "Our asset management software enables you to store and access all relevant data regarding your company’s asset procurement cycle and related information with a few clicks. The goal is to make recall of such information simple and quick.",
-      roles: ["Design", "Front-end"],
-      link: "",
+      name: 'Hapsmiths',
+      desc: 'Hapsmiths is a wellness-focused web app designed to help individuals achieve their best selves through a holistic approach. It offers mental health therapy, curated diet plans, and personalized fitness coaching, ensuring a balanced path to both physical and mental well-being. The platform connects users with experts to support their journey toward a healthier lifestyle in an accessible and affordable way.',
+      roles: ['Design', 'Front-end'],
+      link: '',
     },
     {
-      name: "Frequency",
-      desc: "It acts as a normal Tablet but is equipped with a fingerprint reader that can be used to record login and logout times of employees along with geo-tagging capabilities. This tablet will help strengthen security in and around the campus. It comes with a rugged casing that can withstand drops and shocks and can be connected to a network through Wi-fi or mobile data (3G Sim). It is easy to install without the need for any cable and retains data even in case of power failure.",
-      roles: ["Front-end"],
-      link: "",
+      name: 'Livezy',
+      desc: 'Livezy is a fitness and training web app designed to help individuals transform their lives through expert guidance and structured workout plans. With a strong focus on motivation and progress tracking, Livezy provides users with the tools and support needed to achieve their fitness goals and build healthier habits.',
+      roles: ['Design', 'Front-end', 'Technical Coordinator'],
+      link: '',
     },
     {
-      name: "Visitor Management System",
-      desc: "VMS can be integrated with the ‘Frequency’ Tablet to document and track visitors within the campus. The ‘Frequency’ tablet can be used to record required data from the visitor and automatically generate an E-pass which would essentially constitute their name, type, entry time and the host(employee) name & designation. The system can be fashioned to accept different types of visitors based on requirements and even be used to blacklist certain people and effectively barring them from entry.",
-      roles: ["Wireframe", "Design", "Front-end"],
-      link: "",
+      name: 'Asset Management',
+      desc: 'Our asset management software enables you to store and access all relevant data regarding your company’s asset procurement cycle and related information with a few clicks. The goal is to make recall of such information simple and quick.',
+      roles: ['Design', 'Front-end'],
+      link: '',
     },
     {
-      name: "Management Information System",
-      desc: "A streamlined approach to storing and modifying employee records, working hours and requests. This portal allows the functionality of providing access to records based on hierarchy and clocking multiple projects simultaneously. In addition, leave & travel requests can be submitted and approved effortlessly.",
-      roles: ["Wireframe", "Design", "Front-end", "Technical Coordinator"],
-      link: "",
+      name: 'Frequency',
+      desc: 'It acts as a normal Tablet but is equipped with a fingerprint reader that can be used to record login and logout times of employees along with geo-tagging capabilities. This tablet will help strengthen security in and around the campus. It comes with a rugged casing that can withstand drops and shocks and can be connected to a network through Wi-fi or mobile data (3G Sim). It is easy to install without the need for any cable and retains data even in case of power failure.',
+      roles: ['Front-end'],
+      link: '',
     },
     {
-      name: "HRMS",
-      desc: "A portal catering to all needs in Human Resource management. A database of employee information, leave management, travel authorisations, probation assessment details, appraisal processing and so on.",
-      roles: ["Wireframe", "Design", "Front-end"],
-      link: "",
+      name: 'Visitor Management System',
+      desc: 'VMS can be integrated with the ‘Frequency’ Tablet to document and track visitors within the campus. The ‘Frequency’ tablet can be used to record required data from the visitor and automatically generate an E-pass which would essentially constitute their name, type, entry time and the host(employee) name & designation. The system can be fashioned to accept different types of visitors based on requirements and even be used to blacklist certain people and effectively barring them from entry.',
+      roles: ['Wireframe', 'Design', 'Front-end'],
+      link: '',
     },
     {
-      name: "Client Project Master",
-      desc: "This is a Portal to access details and progress reports of client projects. A system of providing different levels of access to admin, company worker and clients with visually appealing and elaborate project information to clients whereas the admin is given basic progress reports of projects.",
-      roles: ["Wireframe", "Design", "Front-end"],
-      link: "",
+      name: 'Management Information System',
+      desc: 'A streamlined approach to storing and modifying employee records, working hours and requests. This portal allows the functionality of providing access to records based on hierarchy and clocking multiple projects simultaneously. In addition, leave & travel requests can be submitted and approved effortlessly.',
+      roles: ['Wireframe', 'Design', 'Front-end', 'Technical Coordinator'],
+      link: '',
     },
     {
-      name: "Respect Your Artist",
-      desc: "A web-app that provides a platform for any type of artist to express their ideologies through videos and podcasts.",
-      roles: ["Content Strategy", "Technical Coordinator"],
-      link: "",
+      name: 'HRMS',
+      desc: 'A portal catering to all needs in Human Resource management. A database of employee information, leave management, travel authorisations, probation assessment details, appraisal processing and so on.',
+      roles: ['Wireframe', 'Design', 'Front-end'],
+      link: '',
     },
-  ]
+    {
+      name: 'Client Project Master',
+      desc: 'This is a Portal to access details and progress reports of client projects. A system of providing different levels of access to admin, company worker and clients with visually appealing and elaborate project information to clients whereas the admin is given basic progress reports of projects.',
+      roles: ['Wireframe', 'Design', 'Front-end'],
+      link: '',
+    },
+    {
+      name: 'Respect Your Artist',
+      desc: 'A web-app that provides a platform for any type of artist to express their ideologies through videos and podcasts.',
+      roles: ['Content Strategy', 'Technical Coordinator'],
+      link: '',
+    },
+  ];
 
   function rolesList(roles) {
     return `
-        ${roles.map((role) => `<span>${role}</span>`).join("")}
-    `
+        ${roles.map((role) => `<span>${role}</span>`).join('')}
+    `;
   }
 
   function workTemplate(work) {
@@ -246,24 +275,34 @@ function populateWebApps() {
         </div>
 
         <div class="btm-blk web-app">
-            ${work.roles ? rolesList(work.roles) : ""}
+            ${work.roles ? rolesList(work.roles) : ''}
         </div>
     </div>
-  `
+  `;
   }
 
-  document.getElementById("webapps-wrap").innerHTML = `
-  ${worksData.map(workTemplate).join("")}
-`
+  document.getElementById('webapps-wrap').innerHTML = `
+  ${worksData.map(workTemplate).join('')}
+`;
 }
 
 //Awards
 function populateAwards() {
   const awardsData = [
     {
-      name: "Outstanding Performance & Superior Dedication",
-      company: "At Six30 Labs",
-      year: "2021",
+      name: 'Employee of the Year',
+      company: 'At Six30 Labs',
+      year: '2023-2024',
+    },
+    {
+      name: 'Mentorship Excellence Award',
+      company: 'At Six30 Labs',
+      year: '2022',
+    },
+    {
+      name: 'Outstanding Performance & Superior Dedication',
+      company: 'At Six30 Labs',
+      year: '2021',
     },
     // {
     //   name: "First Class Service",
@@ -271,21 +310,21 @@ function populateAwards() {
     //   year: "2020",
     // },
     {
-      name: "Circle of Joy & First Class Service",
-      company: "At Six30 Labs",
-      year: "2019 - 2020",
+      name: 'Circle of Joy & First Class Service',
+      company: 'At Six30 Labs',
+      year: '2019 - 2020',
     },
+    // {
+    //   name: 'All Day Everyday',
+    //   company: 'At Six30 Labs',
+    //   year: '2017 - 2018',
+    // },
     {
-      name: "All Day Everyday",
-      company: "At Six30 Labs",
-      year: "2017 - 2018",
+      name: 'Best Instructor of the Month',
+      company: 'At Internet Academy',
+      year: '2016',
     },
-    {
-      name: "Best Instructor of the Month",
-      company: "At Internet Academy",
-      year: "2016",
-    },
-  ]
+  ];
 
   function awardTemplate(award) {
     return `
@@ -299,38 +338,38 @@ function populateAwards() {
         <h4>${award.company}</h4>
       </div>
     </div>
-  `
+  `;
   }
 
-  document.getElementById("awards-wrap").innerHTML = `
-  ${awardsData.map(awardTemplate).join("")}
-`
+  document.getElementById('awards-wrap').innerHTML = `
+  ${awardsData.map(awardTemplate).join('')}
+`;
 }
 
 //Certifications
 function populateCertifications() {
   const certData = [
     {
-      name: "Graphic Design and Web-Development",
-      academy: "Internet Academy (W3C Member)",
-      year: "2016",
+      name: 'Graphic Design and Web-Development',
+      academy: 'Internet Academy (W3C Member)',
+      year: '2016',
     },
     {
-      name: "Software for Embedded Systems",
-      academy: "MindSculptor Systems Pvt. Ltd.",
-      year: "2015",
+      name: 'Software for Embedded Systems',
+      academy: 'MindSculptor Systems Pvt. Ltd.',
+      year: '2015',
     },
     {
-      name: "Professional C++ and OOPs",
-      academy: "MindSculptor Systems Pvt. Ltd.",
-      year: "2015",
+      name: 'Professional C++ and OOPs',
+      academy: 'MindSculptor Systems Pvt. Ltd.',
+      year: '2015',
     },
     {
-      name: "Core Java",
-      academy: "MindSculptor Systems Pvt. Ltd.",
-      year: "2015",
+      name: 'Core Java',
+      academy: 'MindSculptor Systems Pvt. Ltd.',
+      year: '2015',
     },
-  ]
+  ];
 
   function certTemplate(cert) {
     return `
@@ -344,42 +383,42 @@ function populateCertifications() {
         <h4>${cert.academy}</h4>
       </div>
     </div>
-  `
+  `;
   }
 
-  document.getElementById("cert-wrap").innerHTML = `
-  ${certData.map(certTemplate).join("")}
-`
+  document.getElementById('cert-wrap').innerHTML = `
+  ${certData.map(certTemplate).join('')}
+`;
 }
 
 //Experience
 function populateExperience() {
   const expData = [
+    // {
+    //   company: "Mantra Solutions",
+    //   timePeriod: "PRESENT",
+    //   link: "http://www.mantrasolutions.com/",
+    //   position: "Sr. Software Engineer",
+    // },
     {
-      company: "Mantra Solutions",
-      timePeriod: "PRESENT",
-      link: "http://www.mantrasolutions.com/",
-      position: "Sr. Software Engineer",
+      company: 'Six30 Labs',
+      timePeriod: '2016 - PRESENT',
+      link: 'https://www.six30labs.io/',
+      position: 'Software Engineer/ Principal Engineer',
     },
     {
-      company: "Six30 Labs",
-      timePeriod: "2016 - 2022",
-      link: "https://www.six30labs.io/",
-      position: "Software Engineer/ Principal Engineer",
+      company: 'Internet Academy (W3C Member)',
+      timePeriod: '2016',
+      link: 'https://www.internetacademy.co.in',
+      position: 'Software Engineer & Instructor',
     },
     {
-      company: "Internet Academy (W3C Member)",
-      timePeriod: "2016",
-      link: "https://www.internetacademy.co.in",
-      position: "Software Engineer & Instructor",
+      company: 'Kudelski Group',
+      timePeriod: '2015',
+      link: 'https://www.nagra.com',
+      position: 'Software Engineer',
     },
-    {
-      company: "Kudelski Group",
-      timePeriod: "2015",
-      link: "https://www.nagra.com",
-      position: "Software Engineer",
-    },
-  ]
+  ];
 
   function expTemplate(exp) {
     return `
@@ -399,30 +438,30 @@ function populateExperience() {
         </h3>
         <h4>${exp.position}</h4>
       </div>
-    </div>`
+    </div>`;
   }
 
-  document.getElementById("exp-wrap").innerHTML = `
-  ${expData.map(expTemplate).join("")}
-`
+  document.getElementById('exp-wrap').innerHTML = `
+  ${expData.map(expTemplate).join('')}
+`;
 }
 
 //Education
 function populateEducation() {
   const eduData = [
     {
-      college: "HKBK College of Engineering",
-      timePeriod: "2010 - 2014",
-      stream: "Computer Science & Engineering",
-      info: "Graduated from HKBKCE with a Major in Computer Science & Engineering.",
+      college: 'HKBK College of Engineering',
+      timePeriod: '2010 - 2014',
+      stream: 'Computer Science & Engineering',
+      info: 'Graduated from HKBKCE with a Major in Computer Science & Engineering.',
     },
     {
       college: "St. Joseph's College",
-      timePeriod: "2008 - 2010",
-      stream: "Computer Science",
+      timePeriod: '2008 - 2010',
+      stream: 'Computer Science',
       info: "Graduated from St. Joseph's Pre-University College with a Major in Computer Science.",
     },
-  ]
+  ];
 
   function eduTemplate(edu) {
     return `
@@ -440,10 +479,10 @@ function populateEducation() {
           ${edu.info}
         </p>
       </div>
-    </div>`
+    </div>`;
   }
 
-  document.getElementById("edu-wrap").innerHTML = `
-  ${eduData.map(eduTemplate).join("")}
-`
+  document.getElementById('edu-wrap').innerHTML = `
+  ${eduData.map(eduTemplate).join('')}
+`;
 }
